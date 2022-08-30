@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="input_height">55dp</dimen>
+    <dimen name="title">18sp</dimen>
+    <dimen name="padding">25dp</dimen>
+    <dimen name="input_margin_bottom">20dp</dimen>
+    <dimen name="input_corner_radius">8dp</dimen>
+    <dimen name="input_text_size">15sp</dimen>
+    <dimen name="input_button_height">60dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="padding_box">10dp</dimen>
+</resources>
