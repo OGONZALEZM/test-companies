@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.ogonzalezm.companydirectory.R
@@ -84,6 +85,7 @@ class CompanyListFragment : Fragment() {
     private fun deleteCompany(company: Company?) {
         company?.let {
             viewModel.deleteCompany(company).observe(viewLifecycleOwner) {
+                Toast.makeText(requireContext(), resources.getString(R.string.company_deleted), Toast.LENGTH_SHORT).show()
                 this.loadData()
             }
         }
